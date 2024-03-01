@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* Global */
+$font-stack: Rubik, sans-serif;
+$box-shadow: rgba(17, 17, 26, 0.05) 0px 0px 16px;
+$border-radius: 4px;
+$default-gradient: linear-gradient(160deg, #7981ff, #f2a3ff);
+$padding: 32px;
+$max-width: 1400px;
+
+/* Primary colors */
+$primary-color1: #ff3535;
+
+/* Gray colors */
+$gray-color1: #54595f;
+$gray-color2: #a3a3a3;
+$gray-color3: #f5f7fa;
+
+/* White color */
+$white-color: #ffffff;
+
+/* System colors */
+$succes-color: #2f9e44;
+$warning-color: #ffd43b;
+$error-color: #e03131;
+
+/* Screen sizes */
+
+$larger-size: 1400px;
+$large-size: 1200px;
+$medium-size: 992px;
+$small-size: 768px;
+$smaller-size: 600px;

@@ -1,0 +1,54 @@
+@import "./styles/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  font-family: $font-stack;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.max-width {
+  padding: 0 120px;
+}
+
+@media screen and (max-width: $larger-size) {
+  .max-width {
+    padding: 0 100px;
+  }
+}
+
+@media screen and (max-width: $large-size) {
+  .max-width {
+    padding: 80px;
+  }
+}
+
+@media screen and (max-width: $medium-size) {
+  .max-width {
+    padding: 0 60px;
+  }
+}
+
+@media screen and (max-width: $small-size) {
+  .max-width {
+    padding: 0 40px;
+  }
+}
+
+@media screen and (max-width: $smaller-size) {
+  .max-width {
+    padding: 0 20px;
+  }
+}
