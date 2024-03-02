@@ -4,7 +4,7 @@ import styles from "./Footer.module.scss";
 function Footer() {
   return (
     <footer className={styles.footer}>
-      <div className="max-width">Footer</div>
+      <div className="max-width"></div>
     </footer>
   );
 }
