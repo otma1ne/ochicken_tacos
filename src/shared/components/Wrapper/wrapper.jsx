@@ -13,17 +13,17 @@ function wrapper() {
         <div className={styles.wrp_container}>
           <div className={styles.item}>
             <img src={ico1} alt="" />
-            <div className={styles.title}>Quality Foods</div>
+            <div className={styles.title}>Service de qualité</div>
             <div className={styles.desc}>Sit amet, consectetur adipiscing elit quisque eget maximus velit, non eleifend libero curabitur dapibus mauris sed leo cursus aliquetcras suscipit.</div>
           </div>
           <div className={styles.item}>
             <img src={ico3} alt="" />
-            <div className={styles.title}>Fastest Delivery</div>
+            <div className={styles.title}>Menus divers et variés</div>
             <div className={styles.desc}>Sit amet, consectetur adipiscing elit quisque eget maximus velit, non eleifend libero curabitur dapibus mauris sed leo cursus aliquetcras suscipit.</div>
           </div>
           <div className={styles.item}>
             <img src={ico2} alt="" />
-            <div className={styles.title}>Original Recipes </div>
+            <div className={styles.title}>Goût exeptionnel </div>
             <div className={styles.desc}>Sit amet, consectetur adipiscing elit quisque eget maximus velit, non eleifend libero curabitur dapibus mauris sed leo cursus aliquetcras suscipit.</div>
           </div>
         </div>
