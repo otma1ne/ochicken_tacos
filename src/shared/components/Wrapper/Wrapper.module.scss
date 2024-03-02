@@ -1,3 +1,45 @@
 .wrp {
-    margin-top: 60px;
+    display: flex;
+}
+
+.wrp .img_container {
+    flex: 1;
+}
+
+.wrp .wrp_container {
+    background: url('../../../assets/images/back_2.png');
+    background-size: cover;
+    height: 40vh;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrp .item {
+    flex: 1 0 33%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.wrp .item img {
+    width: 100px;
+   
+}
+.wrp .item .title {
+    margin-top: 15px;
+    letter-spacing: 5px;
+    font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  text-align: center;
+}
+.wrp .item .desc {
+    margin-top: 15px;
+    font-size: 15px;
+    box-sizing: border-box;
+    line-height: 28px;
+  font-weight: 300;
 }
