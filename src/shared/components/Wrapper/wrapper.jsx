@@ -9,6 +9,7 @@ function wrapper() {
   return (
   
     <div className={styles.wrp}>
+
       <div className={styles.img_container}>
         <div className={styles.wrp_container}>
           <div className={styles.item}>
