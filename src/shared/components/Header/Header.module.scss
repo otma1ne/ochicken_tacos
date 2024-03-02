@@ -1,0 +1,34 @@
+@import "../../../styles/variables";
+.nav {
+    background-color: #121618;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    align-items: center;
+}
+.nav .logo_container .logo {
+    width: 100px;
+    height: 100px;
+}
+.nav .tel_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.nav .tel_container .right .info {
+    color: $white-color;
+}
+.nav .tel_container .tel{
+    width: 80px;
+    height: 80px;
+}
+
+.nav  .menu ul{
+    color: $white-color;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 5em;
+}
