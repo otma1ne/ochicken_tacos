@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Header.module.scss";
-import logo from "../../../assets/images/logo-ochiken.png"
-import tel from "../../../assets/icons/telephone.png"
+import logo from "../../assets/images/logo-ochiken.png"
+import tel from "../../assets/icons/telephone.png"
 
 function Header() {
   return (

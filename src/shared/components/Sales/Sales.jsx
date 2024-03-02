@@ -1,11 +1,11 @@
 import React from 'react'
 import styles from "./Sales.module.scss"
-function sales() {
+function Sales() {
   return (
     <div>
-      <div className={styles.title}>Hot sales</div>
+      <div>niiik</div>
     </div>
   )
 }
 
-export default sales;
+export default Sales;

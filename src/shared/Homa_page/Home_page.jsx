@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./Home.module.scss";
 import { Swiper, SwiperSlide } from 'swiper/react'; 
-import slide1 from "../../../assets/images/slide_1.jpg";
-import slide2 from "../../../assets/images/slide_2.jpg";
-import pizza2 from "../../../assets/images/pizza_2.png";
+import slide1 from "../../assets/images/slide_1.jpg";
+import slide2 from "../../assets/images/slide_2.jpg";
+import pizza2 from "../../assets/images/pizza_2.png";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
