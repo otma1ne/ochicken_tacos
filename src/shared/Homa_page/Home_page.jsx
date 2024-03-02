@@ -3,7 +3,7 @@ import styles from "./Home.module.scss";
 import { Swiper, SwiperSlide } from 'swiper/react'; 
 import slide1 from "../../assets/images/slide_1.jpg";
 import slide2 from "../../assets/images/slide_2.jpg";
-import pizza2 from "../../assets/images/pizza_2.png";
+import pizza2 from "../../assets/images/Pizza/marguerita.png";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -22,7 +22,7 @@ function Home_page() {
             <img className={styles.backgroundImage} src={slide1} alt="Background" />
             <div className={styles.overlay}>
               <div className={styles.contentWrapper}>
-                <h1 className={styles.title}>Pizza Margarita</h1>
+                <h1 className={styles.title}>Pizza Marguerita</h1>
                 <div className={styles.seconde_title}>Making people happy </div>
                 <div className={styles.ligne}></div>
                 <div className={styles.three_title}>Italian Pizza With Cherry Tomatoes and Green Basil  </div>
