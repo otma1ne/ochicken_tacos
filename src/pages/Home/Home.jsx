@@ -6,8 +6,8 @@ function Home() {
   return (
     <div>
       <Home_page />
-      <Wrapper/>
-      <Sales/>
+      <Wrapper />
+      <Sales />
     </div>
   );
 }
