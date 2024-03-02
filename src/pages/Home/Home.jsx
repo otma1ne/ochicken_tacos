@@ -7,6 +7,7 @@ import 'swiper/css/pagination';
 import slide1 from "../../assets/images/slide_1.jpg";
 import slide2 from "../../assets/images/slide_2.jpg";
 import pizza2 from "../../assets/images/pizza_2.png";
+import Wrapper from "../../shared/components/Wrapper/wrapper"
 
 
 function Home() {
@@ -50,6 +51,7 @@ function Home() {
         </SwiperSlide>
         
       </Swiper>
+      <Wrapper/>
     </div>
   );
 }
