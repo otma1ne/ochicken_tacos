@@ -1,44 +1,23 @@
-@import "../../../styles/variables";
+@import "../../styles/variables";
 
-.sale_container {
-    padding: 30px 20px;
-    background-color: $black-color;
-    height: 55vh;
-}
-
-.container_title {
-    margin-top: 20px;
-}
-
-.sale_title {
-    top: 25px;
-    color: $title-color;
-    text-align: center;
-    font-size: 32px;
-    line-height: 32px;
-    font-weight: 400;
-    text-transform: uppercase;
-    word-wrap: break-word;
-}
-
-.sale_container .cards {
+.menu_container .cards {
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
 
-.sale_container .cards .card img {
+.menu_container .cards .card img {
     width: 150px;
    
 }
-.sale_container .cards .card {
+.menu_container .cards .card {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.sale_container .cards .card .title {
+.menu_container .cards .card .title {
     margin-top: 15px;
     text-align: center;
     font-size: 18px;
@@ -50,7 +29,7 @@
     color: $white-color;
 }
 
-.sale_container .cards .card .ingre {
+.menu_container .cards .card .ingre {
     color: $white-color;
     margin-top: 10px;
     text-align: center;
@@ -58,13 +37,13 @@
     line-height: 28px;
     box-sizing: border-box;
 }
-.sale_container .cards .card .prix {
+.menu_container .cards .card .prix {
     margin-top: 10px;
     color: $white-color;
     text-align: center;
     font-size: 24px;
   letter-spacing: 3px;
 }
-.sale_container .cards .card:hover .title {
+.menu_container .cards .card:hover .title {
     color: $hover-color;
 }
