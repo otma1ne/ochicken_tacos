@@ -1,9 +1,10 @@
 @import "../../styles/variables";
 
 .home {
+    margin-top: 103px;
 
     .swiper-slide {
-        transform: none; // Disable translateZ(0)
+        transform: none; 
         backface-visibility: hidden;
         position: relative;
         overflow: hidden;
@@ -37,7 +38,7 @@
         height: 100vh;
     }
 
-    .home .contentWrapper {
+    .contentWrapper {
         color: $white-color;
     }
 
