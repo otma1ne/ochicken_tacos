@@ -12,7 +12,9 @@ function Sales() {
         <div className={styles.sale_title}>Hot Sales</div>
         <div className={styles.cards}>
           <div className={styles.card}>
-            <img src={pizza} alt="" />
+            <div className={styles.img_container}>
+              <img src={pizza} alt="" />
+            </div>
             <div className={styles.title}>4 Fromages</div>
             <div className={styles.ingre}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque.</div>
             <div className={styles.prix}>12£</div>
@@ -36,7 +38,6 @@ function Sales() {
             <div className={styles.ingre}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque.</div>
             <div className={styles.prix}>12£</div>
           </div>
-
         </div>
       </div>
 
