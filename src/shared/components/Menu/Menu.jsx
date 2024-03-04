@@ -12,17 +12,17 @@ export default function MyTabs() {
                     <div className={styles.filter_items}>
                         <div className={`${styles.filter_item} ${activeCategory === 'pizza' ? styles.active : ''}`} onClick={() => { setActiveCategory('pizza') }}>Pizza</div>
                         <div className={`${styles.filter_item} ${activeCategory === 'burger' ? styles.active : ''}`} onClick={() => { setActiveCategory('burger') }}>Burger</div>
-                        <div className={`${styles.filter_item} ${activeCategory === 'sandwiche' ? styles.active : ''}`} onClick={() => { setActiveCategory('sandwiche') }}>Assiets</div>
-                        <div className={`${styles.filter_item} ${activeCategory === 'sandwiche' ? styles.active : ''}`} onClick={() => { setActiveCategory('sandwiche') }}>Sandwiche</div>
-                        <div className={`${styles.filter_item} ${activeCategory === 'sandwiche' ? styles.active : ''}`} onClick={() => { setActiveCategory('sandwiche') }}>Bucket</div>
-                        <div className={`${styles.filter_item} ${activeCategory === 'sandwiche' ? styles.active : ''}`} onClick={() => { setActiveCategory('sandwiche') }}>boisson</div>
+                        <div className={`${styles.filter_item} ${activeCategory === 'sandwiche' ? styles.active : ''}`} onClick={() => { setActiveCategory('sandwiche') }}>Assiettes</div>
+                        <div className={`${styles.filter_item} ${activeCategory === 'sandwiche' ? styles.active : ''}`} onClick={() => { setActiveCategory('sandwiche') }}>Sandwichs</div>
+                        <div className={`${styles.filter_item} ${activeCategory === 'sandwiche' ? styles.active : ''}`} onClick={() => { setActiveCategory('sandwiche') }}>Chicken Bucket</div>
+                        <div className={`${styles.filter_item} ${activeCategory === 'sandwiche' ? styles.active : ''}`} onClick={() => { setActiveCategory('sandwiche') }}>Boissons</div>
                     </div>
                 </div>
 
                 <div className={styles.cards__container}>
                     {data.filter((item) => item.category === activeCategory).map((item) => {
                         return <div className={styles.card}>
-                            <div className={styles.img}><img src={item.imageUrl} alt="" /></div>
+                            <img src={item.imageUrl} alt="" />
                             <div className={styles.title}>{item.name}</div>
                             <div className={styles.ingre}>{item.ingredient}</div>
                             <div className={styles.prix}>{item.price}</div>
