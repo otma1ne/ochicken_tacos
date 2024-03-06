@@ -4,75 +4,87 @@
     padding: 30px 20px;
     background-color: $black-color;
     height: 60vh;
+}
 
-    .container_title {
-        margin-top: 20px;
+.container_title {
+    margin-top: 20px;
+}
+
+.sale_title {
+    top: 25px;
+    color: $title-color;
+    text-align: center;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+.sale_container .cards {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.sale_container .cards .card .img_container{
+    height: 50%;
+
+}
+.sale_container .cards .card img {
+    width: 150px;
+    height: 150px;
+   
+}
+.sale_container .cards .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sale_container .cards .card .title {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    color: $white-color;
+}
+
+.sale_container .cards .card .ingre {
+    color: $white-color;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 28px;
+    box-sizing: border-box;
+}
+.sale_container .cards .card .prix {
+    margin-top: 10px;
+    color: $white-color;
+    text-align: center;
+    font-size: 24px;
+  letter-spacing: 3px;
+}
+.sale_container .cards .card:hover .title {
+    color: $hover-color;
+}
+@media only screen and (max-width: 992px) {
+    .sale_container {
+        height: 100%;
     }
-
-    .sale_title {
-        top: 25px;
-        color: $title-color;
-        text-align: center;
-        font-size: 32px;
-        line-height: 32px;
-        font-weight: 400;
-        text-transform: uppercase;
-        word-wrap: break-word;
+    .sale_container .cards {
+        grid-template-columns: repeat(2, 1fr); /* Deux cartes par colonne pour les tablettes */
     }
-
-    .cards {
-        margin-top: 50px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-
-        .card {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-
-            .img_container {
-                height: 50%;
-            }
-
-            img {
-                width: 150px;
-                height: 150px;
-            }
-
-            .title {
-                margin-top: 15px;
-                text-align: center;
-                font-size: 18px;
-                line-height: 26px;
-                letter-spacing: 3px;
-                font-weight: 700;
-                -webkit-transition: all .3s;
-                transition: all .3s;
-                color: $white-color;
-
-                &:hover {
-                    cursor: pointer;
-                    color: $hover-color;
-                }
-            }
-
-            .ingre {
-                color: $white-color;
-                margin-top: 10px;
-                text-align: center;
-                font-size: 14px;
-                line-height: 28px;
-                box-sizing: border-box;
-            }
-
-            .prix {
-                margin-top: 10px;
-                color: $white-color;
-                text-align: center;
-                font-size: 24px;
-                letter-spacing: 3px;
-            }
-        }
+}
+@media only screen and (max-width: 768px) {
+    .sale_container {
+        height: 100%;
+    }
+    .sale_container .cards {
+        grid-template-columns: 1fr; /* Une seule colonne pour les appareils mobiles et tablettes */
     }
 }

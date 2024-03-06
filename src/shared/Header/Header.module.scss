@@ -41,3 +41,11 @@
         gap: 5em;
     }
 }
+
+/*responsive */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+    
+}
