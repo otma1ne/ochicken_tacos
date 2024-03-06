@@ -19,9 +19,17 @@
         padding: 20px;
         box-sizing: border-box;
         text-align: center;
+
+        .images {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         
         img {
             width: 100px;
+            height: 70%;
         }
         
         .title {
@@ -44,5 +52,32 @@
             font-weight: 300;
         }
     }
- }
- 
+    
+    @media (max-width: 768px) {
+        .item {
+            flex: 1 0 50%;
+        }
+        .wrp_container {
+            background: url('../../../assets/images/back_2.png');
+            background-size: cover;
+            height: 80vh;
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .item {
+            flex: 1 0 100%;
+        }
+        .wrp_container {
+            background: url('../../../assets/images/back_2.png');
+            background-size: cover;
+            height: 100%;
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}

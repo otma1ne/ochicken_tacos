@@ -14,9 +14,9 @@
 
 .filter_items {
     display: flex;
+    flex-wrap: wrap; 
     justify-content: center;
-    align-items: center;
-    gap: 10px;
+    gap: 10px; 
 }
 
 .filter_item {
@@ -30,7 +30,7 @@
 }
 
 .card {
-    width: 100%; // Définissez la largeur de chaque carte
+    width: 100%; 
     border-radius: 15px;
     padding: 15px 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -45,10 +45,10 @@
     height: 100%;
 }
 
-.card img {
+.card  img {
     width: 100%; 
     height: 100%;
-    border-radius: 8px;
+    object-fit:contain;
 }
 
 .card .title {
@@ -67,4 +67,33 @@
     font-weight: 800;
     color: $gray-color2;
     margin-top: 5px;
+}
+/*responsive*/
+@media only screen and (max-width: 992px) {
+    .filter_item {
+        display: flex;
+        justify-content: center;
+        flex-basis: calc(33% - 5px); 
+    }
+
+    .sale_container {
+        height: 100%;
+    }
+    .cards__container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+
+}
+@media only screen and (max-width: 768px) {
+    .filter_item {
+        flex-basis: calc(50% - 5px); 
+    }
+
+    .sale_container {
+        height: 100%;
+    }
+    .cards__container {
+        grid-template-columns: 1fr; 
+    }
 }
