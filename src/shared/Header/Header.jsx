@@ -1,17 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Header.module.scss";
-import logo from "../../assets/images/logo-ochiken.png"
-import tel from "../../assets/icons/telephone.png"
+import logo from "../../assets/images/logo-ochiken.png";
+import tel from "../../assets/icons/telephone.png";
+import menuIcon from "../../assets/icons/Menu.svg";
 
 function Header() {
+  const [showMenu, setShowMenu] = useState(false);
+
   return (
     <header className={styles.header}>
+      <div
+        className={styles.overlay + " " + (showMenu ? styles.active : "")}
+        onClick={() => {
+          setShowMenu(false);
+        }}
+      ></div>
       <div className={styles.nav}>
         <div className={styles.logo_container}>
           <img src={logo} alt="logo" className={styles.logo} />
         </div>
-        <div className={styles.menu}>
-          <ul >
+        <div className={styles.menu + " " + (showMenu ? styles.active : "")}>
+          <ul>
             <li>Home</li>
             <li>About</li>
             <li>Featured</li>
@@ -29,6 +38,14 @@ function Header() {
               <div className={styles.info}>09 82 35 49 00</div>
             </div>
           </div>
+        </div>
+        <div
+          className={styles.menu_icon}
+          onClick={() => {
+            setShowMenu(true);
+          }}
+        >
+          <img src={menuIcon} alt="menu" />
         </div>
       </div>
     </header>

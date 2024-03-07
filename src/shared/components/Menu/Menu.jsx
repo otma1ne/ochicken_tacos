@@ -17,7 +17,7 @@ export default function MyTabs() {
 
     const pizzaSubCategories = ['sauce tomate', 'sauce blanche'];
 
-    const desertsSubCategories = ['gateau', 'haagen'];
+    const desertsSubCategories = ['gateau', 'haagen-dazs'];
 
     return (
         <div className='max-width'>
@@ -71,3 +71,4 @@ export default function MyTabs() {
         </div>
     );
 }
+

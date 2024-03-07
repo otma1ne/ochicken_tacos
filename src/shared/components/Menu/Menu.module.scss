@@ -81,6 +81,7 @@
 }
 
 /* Responsive */
+
 @media only screen and (max-width: 992px) {
     .filter_items {
         display: flex;
@@ -106,5 +107,3 @@
         grid-template-columns: 1fr; 
     }
 }
-
-
