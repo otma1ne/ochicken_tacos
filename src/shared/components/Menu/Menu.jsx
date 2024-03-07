@@ -8,7 +8,7 @@ export default function MyTabs() {
 
     // Filtrer les données en fonction de la catégorie et de la sous-catégorie actives
     const filteredData = data.filter((item) => {
-        if (activeCategory === 'pizza') {
+        if (activeCategory === 'pizza' || activeCategory === 'deserts') {
             return activeSubCategory ? item.category === activeCategory && item.subCategory === activeSubCategory : item.category === activeCategory;
         } else {
             return item.category === activeCategory;
