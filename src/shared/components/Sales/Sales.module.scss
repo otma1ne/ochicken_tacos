@@ -26,9 +26,13 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
+.sale_container .cards .card .img_container{
+    height: 50%;
 
+}
 .sale_container .cards .card img {
     width: 150px;
+    height: 150px;
    
 }
 .sale_container .cards .card {
@@ -67,4 +71,20 @@
 }
 .sale_container .cards .card:hover .title {
     color: $hover-color;
+}
+@media only screen and (max-width: 992px) {
+    .sale_container {
+        height: 100%;
+    }
+    .sale_container .cards {
+        grid-template-columns: repeat(2, 1fr); /* Deux cartes par colonne pour les tablettes */
+    }
+}
+@media only screen and (max-width: 768px) {
+    .sale_container {
+        height: 100%;
+    }
+    .sale_container .cards {
+        grid-template-columns: 1fr; /* Une seule colonne pour les appareils mobiles et tablettes */
+    }
 }

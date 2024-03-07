@@ -1,0 +1,27 @@
+
+@import "../../styles/variables" ;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+
+.footer {
+    padding: 20px 10px;
+    margin-top: 20px;
+    color: $white-color;
+    background : $black-color;
+
+    .brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img {
+        width: 150px;
+    }
+    .info {
+        text-align: center;
+    }
+    .copy {
+        margin-top: 15px;
+        text-align: center;
+    }
+}

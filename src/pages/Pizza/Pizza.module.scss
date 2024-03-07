@@ -1,50 +1,72 @@
 @import "../../styles/variables";
 
-.menu_container .cards {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+.filter_item.active {
+    color: red;
 }
 
-.menu_container .cards .card img {
-    width: 150px;
-   
+.filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: black;
 }
-.menu_container .cards .card {
+
+.filter_items {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
+}
+
+.filter_item {
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+
+.cards {
+    color: red;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+}
+
+.card {
+    width: 250px; 
+    border-radius: 15px;
+    padding: 15px 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.menu_container .cards .card .title {
-    margin-top: 15px;
-    text-align: center;
+.card .img_container {
+    width: 200px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+}
+
+.card .title {
     font-size: 18px;
-    line-height: 26px;
-    letter-spacing: 3px;
-    font-weight: 700;
-    -webkit-transition: all .3s;
-    transition: all .3s;
-    color: $white-color;
+    font-weight: 600;
+    margin-top: 10px;
+    color: $gray-color1;
 }
 
-.menu_container .cards .card .ingre {
-    color: $white-color;
-    margin-top: 10px;
-    text-align: center;
-    font-size: 14px;
-    line-height: 28px;
-    box-sizing: border-box;
+.card .ingre {
+    margin-top: 5px;
+    color: $gray-color2;
 }
-.menu_container .cards .card .prix {
-    margin-top: 10px;
-    color: $white-color;
-    text-align: center;
-    font-size: 24px;
-  letter-spacing: 3px;
-}
-.menu_container .cards .card:hover .title {
-    color: $hover-color;
+
+.card .prix {
+    font-weight: 800;
+    color: $gray-color2;
+    margin-top: 5px;
 }
