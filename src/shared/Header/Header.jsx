@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 import styles from "./Header.module.scss";
 import logo from "../../assets/images/logo-ochiken.png";
 import tel from "../../assets/icons/telephone.png";
@@ -6,6 +7,14 @@ import menuIcon from "../../assets/icons/Menu.svg";
 
 function Header() {
   const [showMenu, setShowMenu] = useState(false);
+
+  const scrollTo = (id) => {
+    scroll.scrollTo(id, {
+      duration: 800,
+      smooth: "easeInOutQuart",
+    });
+    setShowMenu(false);
+  };
 
   return (
     <header className={styles.header}>
@@ -21,11 +30,31 @@ function Header() {
         </div>
         <div className={styles.menu + " " + (showMenu ? styles.active : "")}>
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Featured</li>
-            <li>Blog</li>
-            <li>Contact</li>
+            <li>
+              <Link to="home" smooth={true} duration={800}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="sales" smooth={true} duration={800}>
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to="featured" smooth={true} duration={800}>
+                Featured
+              </Link>
+            </li>
+            <li>
+              <Link to="menu" smooth={true} duration={800}>
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link to="contact" smooth={true} duration={800}>
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
         <div>

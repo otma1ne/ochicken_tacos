@@ -9,7 +9,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 function Home_page() {
   return (
-    <div className={styles.home}>
+    <div className={styles.home} id="home">
       <Swiper
         spaceBetween={50}
         slidesPerView={1}
