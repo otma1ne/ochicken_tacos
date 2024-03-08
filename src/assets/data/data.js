@@ -384,7 +384,7 @@ const data = [
         "ingredient" : "",    
         "price": 8,
         "category": "deserts",
-        "subCategory": "haagen"
+        "subCategory": "haagen-dazs"
     },
 
 

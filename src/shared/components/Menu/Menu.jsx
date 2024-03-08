@@ -6,7 +6,6 @@ export default function MyTabs() {
     const [activeCategory, setActiveCategory] = useState('pizza');
     const [activeSubCategory, setActiveSubCategory] = useState('');
 
-    // Filtrer les données en fonction de la catégorie et de la sous-catégorie actives
     const filteredData = data.filter((item) => {
         if (activeCategory === 'pizza' || activeCategory === 'deserts') {
             return activeSubCategory ? item.category === activeCategory && item.subCategory === activeSubCategory : item.category === activeCategory;
@@ -20,7 +19,7 @@ export default function MyTabs() {
     const desertsSubCategories = ['Gateaux', 'Häagen Dazs'];
 
     return (
-        <div className='max-width'>
+        <div className='max-width' id='menu'>
             <div className={styles.tabsContainer} style={{ color: "white" }}>
                 <div className={styles.filter_items}>
                     <div className={`${styles.filter_item} ${activeCategory === 'pizza' ? styles.active : ''}`} onClick={() => { setActiveCategory('pizza'); setActiveSubCategory(''); }}>Pizzas</div>

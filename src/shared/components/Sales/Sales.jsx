@@ -7,7 +7,7 @@ import mixte from "../../../assets/images/asiettes/mixte.png"
 
 function Sales() {
   return (
-    <section className={styles.sale_container}>
+    <section className={styles.sale_container} id='sales'>
       <div className='max-width'>
         <div className={styles.sale_title}>Hot Sales</div>
         <div className={styles.cards}>

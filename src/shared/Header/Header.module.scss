@@ -55,6 +55,16 @@
     flex-direction: row;
     align-items: center;
     gap: 5em;
+
+    li {
+      color: $white-color;
+      transition: color 0.3s ease;
+
+      &:hover {
+        cursor: pointer;
+        color: $hover-color; 
+      }
+    }
   }
 
   .menu_icon {
@@ -62,7 +72,7 @@
   }
 }
 
-/*responsive */
+/* Responsive */
 
 @media (max-width: $large-size) {
   .nav {
