@@ -15,20 +15,20 @@ export default function MyTabs() {
         }
     });
 
-    const pizzaSubCategories = ['sauce tomate', 'sauce blanche'];
+    const pizzaSubCategories = ['Base tomate', 'Base crème fraîche'];
 
-    const desertsSubCategories = ['gateau', 'haagen'];
+    const desertsSubCategories = ['Gateaux', 'Häagen Dazs'];
 
     return (
         <div className='max-width'>
             <div className={styles.tabsContainer} style={{ color: "white" }}>
                 <div className={styles.filter_items}>
-                    <div className={`${styles.filter_item} ${activeCategory === 'pizza' ? styles.active : ''}`} onClick={() => { setActiveCategory('pizza'); setActiveSubCategory(''); }}>Pizza</div>
-                    <div className={`${styles.filter_item} ${activeCategory === 'burger' ? styles.active : ''}`} onClick={() => { setActiveCategory('burger'); }}>Burger</div>
-                    <div className={`${styles.filter_item} ${activeCategory === 'sandwiche' ? styles.active : ''}`} onClick={() => { setActiveCategory('sandwiche'); }}>Assiets</div>
-                    <div className={`${styles.filter_item} ${activeCategory === 'assiets' ? styles.active : ''}`} onClick={() => { setActiveCategory('assiets'); }}>Sandwiche</div>
-                    <div className={`${styles.filter_item} ${activeCategory === 'deserts' ? styles.active : ''}`} onClick={() => { setActiveCategory('deserts'); }}>Deserts</div>
-                    <div className={`${styles.filter_item} ${activeCategory === 'Supliments' ? styles.active : ''}`} onClick={() => { setActiveCategory('Supliments'); }}>Boisson</div>
+                    <div className={`${styles.filter_item} ${activeCategory === 'pizza' ? styles.active : ''}`} onClick={() => { setActiveCategory('pizza'); setActiveSubCategory(''); }}>Pizzas</div>
+                    <div className={`${styles.filter_item} ${activeCategory === 'burger' ? styles.active : ''}`} onClick={() => { setActiveCategory('burger'); }}>Burgers</div>
+                    <div className={`${styles.filter_item} ${activeCategory === 'sandwiche' ? styles.active : ''}`} onClick={() => { setActiveCategory('sandwiche'); }}>Assiettes</div>
+                    <div className={`${styles.filter_item} ${activeCategory === 'assiets' ? styles.active : ''}`} onClick={() => { setActiveCategory('assiets'); }}>Sandwichs</div>
+                    <div className={`${styles.filter_item} ${activeCategory === 'deserts' ? styles.active : ''}`} onClick={() => { setActiveCategory('deserts'); }}>Desserts</div>
+                    <div className={`${styles.filter_item} ${activeCategory === 'Supliments' ? styles.active : ''}`} onClick={() => { setActiveCategory('Supliments'); }}>Boissons</div>
                 </div>
             </div>
 
