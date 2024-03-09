@@ -9,7 +9,7 @@ function Sales() {
   return (
     <section className={styles.sale_container} id='sales'>
       <div className='max-width'>
-        <div className={styles.sale_title}>Hot Sales</div>
+        <div className={styles.sale_title}>Les meilleures ventes</div>
         <div className={styles.cards}>
           <div className={styles.card}>
             <div className={styles.img_container}>
@@ -20,6 +20,7 @@ function Sales() {
             <div className={styles.prix}>12£</div>
           </div>
 
+          
           <div className={styles.card}>
             <img src={triple} alt="" />
             <div className={styles.title}>Triple cheese</div>

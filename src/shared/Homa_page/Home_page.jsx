@@ -23,9 +23,9 @@ function Home_page() {
             <div className={styles.overlay}>
               <div className={styles.contentWrapper}>
                 <h1 className={styles.title}>Pizza Margarita</h1>
-                <div className={styles.seconde_title}>Making people happy </div>
+                <div className={styles.seconde_title}>1 pizza achetée </div>
                 <div className={styles.ligne}></div>
-                <div className={styles.three_title}>Italian Pizza With Cherry Tomatoes and Green Basil  </div>
+                <div className={styles.three_title}>2ème à 5€ A emporter !!</div>
               </div>
               <div className={styles.images}>
                 <img className={styles.pizza_image} src={pizza2} alt="Pizza" />
@@ -40,7 +40,7 @@ function Home_page() {
               <div className={styles.contentWrapper_two}>
               <h1 className={styles.title}>Pizza Margarita</h1>
                 <div className={styles.seconde_title}>Making people happy </div>
-                <div className={styles.three_title}>Italian Pizza With Cherry Tomatoes and Green Basil  </div>
+                <div className={styles.three_title}>Pizza With Cherry Tomatoes and Green Basil  </div>
               </div>
            
             </div>

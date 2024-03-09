@@ -17,8 +17,25 @@
     img {
         width: 150px;
     }
-    .info {
+    .tel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
         text-align: center;
+    }
+    .loc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+    .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
     }
     .copy {
         margin-top: 15px;
