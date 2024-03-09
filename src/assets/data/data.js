@@ -1,5 +1,3 @@
-// import pizza1Image from "../images/Pizza/4fromages.png";
-import pizza from "../images/Pizza/3jambons.png"
 const data = [
 
     /*Pizza sauce tomate*/ 
