@@ -360,7 +360,7 @@ const data = [
     {
         "id": 39,
         "name": "Rif burger",
-        "imageUrl": require("../images/burgers/rif.png"),
+        "imageUrl": require("../images/burgers/rifburger.png"),
         "ingredient" : "Galette de PDT , galette de chicken, cheddar, sauce  crudités",    
         "price": "8€",
         "category": "burger"
@@ -550,7 +550,7 @@ const data = [
     {
         "id": 62,
         "name": "Merguez",
-        "imageUrl": require("../images/paninis/merguez.png"),
+        "imageUrl": require("../images/paninis/merg.png"),
         "ingredient" : "6€",    
         "price": "",
         "category": "paninis"
@@ -647,6 +647,24 @@ const data = [
         "price": "30€",
         "category": "offres",
         "subCategory": "Menu family"
+    },
+    {
+        "id": 70,
+        "name": "Les sauces",
+        "imageUrl": require("../images/sauces/sauce.png"),
+        "ingredient" : "Blanche, Mayo, Harissa, Ketchup, Samouraï, Algérienne, Marocaine, Andalouse, Barbecue, Biggy Burger",    
+        "price": "",
+        "category": "sauceboi",
+        "subCategory": "Sauce"
+    },
+    {
+        "id": 71,
+        "name": "Les Boissons",
+        "imageUrl": require("../images/boissons/boisson.png"),
+        "ingredient" : "33CL 1.50€, 50CL 2€, 1.5L 3€",    
+        "price": "",
+        "category": "sauceboi",
+        "subCategory": "Boissons"
     },
 ];
 
