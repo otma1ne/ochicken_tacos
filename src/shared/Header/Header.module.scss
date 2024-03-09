@@ -1,0 +1,129 @@
+@import "../../styles/variables";
+
+.header {
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100dvh;
+    background: rgba(0, 0, 0, 0.5);
+
+    &.active {
+      display: block;
+    }
+  }
+}
+
+.nav {
+  background-color: #121618;
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+
+  .logo_container .logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .tel_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    .right .info {
+      color: $white-color;
+    }
+
+    .tel {
+      width: 40px;
+    }
+  }
+
+  .menu ul {
+    color: $white-color;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 5em;
+
+    li {
+      color: $white-color;
+      transition: color 0.3s ease;
+
+      &:hover {
+        cursor: pointer;
+        color: $hover-color; 
+      }
+    }
+  }
+
+  .menu_icon {
+    display: none;
+  }
+}
+
+/* Responsive */
+
+@media (max-width: $large-size) {
+  .nav {
+    .tel_container {
+      .right .info {
+        color: $white-color;
+        font-size: 14px;
+      }
+
+      .tel {
+        width: 36px;
+      }
+    }
+
+    .menu_icon {
+      display: block;
+    }
+
+    .menu {
+      position: absolute;
+      z-index: 9999;
+      top: 0;
+      right: -100%;
+      width: 100%;
+      max-width: 240px;
+      height: 100dvh;
+      background-color: $yellow-color;
+      color: white;
+      transition: 0.3s ease-in-out;
+
+      ul {
+        padding: 40px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+      }
+      
+      ul li {
+        color: white;
+        transition: color 0.3s ease;
+
+         &:hover {
+           cursor: pointer;
+           color: orange !important; 
+        }
+      }
+      &.active {
+        right: 0;
+        
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+@import "../../styles/variables";
+
+.filter_item.active {
+    color: red;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.filter_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter_item {
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+
+.cards {
+    color: red;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+}
+
+.card {
+    width: 250px; 
+    border-radius: 15px;
+    padding: 15px 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card .img_container {
+    width: 200px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+}
+
+.card .title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: $gray-color1;
+}
+
+.card .ingre {
+    margin-top: 5px;
+    color: $gray-color2;
+}
+
+.card .prix {
+    font-weight: 800;
+    color: $gray-color2;
+    margin-top: 5px;
+}

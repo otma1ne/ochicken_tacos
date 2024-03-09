@@ -1,10 +1,15 @@
 import React from "react";
-import styles from "./Home.module.scss";
-
+import Home_page from "../../shared/Homa_page/Home_page.jsx"
+import Wrapper from "../../shared/components/Wrapper/wrapper.jsx"
+import Sales from "../../shared/components/Sales/Sales.jsx"
+import Menu from "../../shared/components/Menu/Menu.jsx"
 function Home() {
   return (
-    <div className={styles.home}>
-      <div className="max-width">Home page</div>
+    <div>
+      <Home_page />
+      <Sales />
+      <Wrapper />
+      <Menu />
     </div>
   );
 }
