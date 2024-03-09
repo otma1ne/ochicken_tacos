@@ -17,7 +17,7 @@ export default function MyTabs() {
     const pizzaSubCategories = ['Base tomate', 'Base crème fraîche'];
 
     const desertsSubCategories = ['Gateaux', 'Häagen Dazs'];
-    const offresSubCategories = ['Bucket', 'Menu_tenders', 'Menu_enfant', 'Menu_family'];
+    const offresSubCategories = ['Bucket', 'Menu tenders', 'Menu enfant', 'Menu family'];
 
     return (
         <div className='max-width' id='menu'>

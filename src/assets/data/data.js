@@ -630,7 +630,7 @@ const data = [
         "ingredient" : "5 tenders +  frites + boisson",    
         "price": "10€",
         "category": "offres",
-        "subCategory": "Menu_tenders"
+        "subCategory": "Menu tenders"
     },
     {
         "id": 68,
@@ -639,7 +639,7 @@ const data = [
         "ingredient" : "Nugget ou Burger + Capri sun ",    
         "price": "6€",
         "category": "offres",
-        "subCategory": "Menu_enfant"
+        "subCategory": "Menu enfant"
     },
     {
         "id": 69,
@@ -648,7 +648,7 @@ const data = [
         "ingredient" : "3 Pizzas + Boisson 1L ",    
         "price": "30€",
         "category": "offres",
-        "subCategory": "Menu_family"
+        "subCategory": "Menu family"
     },
 ];
 
