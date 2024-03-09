@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import Pizza from "./pages/Pizza/Pizza";
+import Menu from "./pages/Menu/Menu";
 
 const router = createBrowserRouter([
   {
@@ -8,10 +8,9 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/Pizza",
-    element: <Pizza />,
+    path: "/menu",
+    element: <Menu />,
   },
- 
 ]);
 
 export default router;
