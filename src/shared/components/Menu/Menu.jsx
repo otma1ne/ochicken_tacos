@@ -75,7 +75,7 @@ export default function MyTabs() {
                 {filteredData.map((item, index) => (
                     <div key={index} className={styles.card}>
                         <div className={styles.cardContent}>
-                            <img src={item.imageUrl} alt="image produit" />
+                            <img src={item.imageUrl} alt="produit" />
                             <div className={styles.title}>{item.name}</div>
                             <div className={styles.ingre}>{item.ingredient}</div>
                             <div className={styles.prix}>{item.price}</div>

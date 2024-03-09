@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import styles from "./Header.module.scss";
 import logo from "../../assets/images/logo-ochiken.png";
 import tel from "../../assets/icons/telephone.png";
@@ -8,13 +8,13 @@ import menuIcon from "../../assets/icons/Menu.svg";
 function Header() {
   const [showMenu, setShowMenu] = useState(false);
 
-  const scrollTo = (id) => {
+  /* const scrollTo = (id) => {
     scroll.scrollTo(id, {
       duration: 800,
       smooth: "easeInOutQuart",
     });
     setShowMenu(false);
-  };
+  }; */
 
   const handleMenuClick = () => {
     setShowMenu(!showMenu);
@@ -32,7 +32,6 @@ function Header() {
           <Link to="/">
             <img src={logo} alt="logo" className={styles.logo} />
           </Link>
-
         </div>
         <div className={styles.menu + " " + (showMenu ? styles.active : "")}>
           <ul>
@@ -75,10 +74,7 @@ function Header() {
             </div>
           </div>
         </div>
-        <div
-          className={styles.menu_icon}
-          onClick={handleMenuClick}
-        >
+        <div className={styles.menu_icon} onClick={handleMenuClick}>
           <img src={menuIcon} alt="menu" />
         </div>
       </div>
