@@ -12,15 +12,22 @@ function Footer() {
           <img src={logo} alt="" />
         </div>
         <div className={styles.info}>
-          <a href="tel:00339293993" className={styles.tel}>
-            <BsFillTelephoneFill />
-            <span>00339293993</span>
-          </a>
-          <div className={styles.loc}>
-            <IoLocationSharp />
-            <span>5 rue champagne chalons</span>
+          <div className={styles.tel}>
+            <a href="tel:=09 82 35 86 50 " className={styles.tel}>
+              <BsFillTelephoneFill />
+              <span>09 82 35 86 50 </span>
+            </a>
+            <a href="tel:=09 82 35 49 00" className={styles.tel}>
+              <BsFillTelephoneFill />
+              <span>09 82 35 49 00</span>
+            </a>
+
           </div>
         </div>
+        <div className={styles.loc}>
+            <IoLocationSharp />
+            <span>19 Rue Théroigne de Méricourt, Châlons en Champagne <br /> (en face de brico-marché)</span>
+          </div>
         <p className={styles.copy}>© 2024 Tous droits réservés par O'chic N'tacos </p>
       </div>
     </footer>
