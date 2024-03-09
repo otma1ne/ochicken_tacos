@@ -20,6 +20,7 @@ function Sales() {
             <div className={styles.prix}>12£</div>
           </div>
 
+          
           <div className={styles.card}>
             <img src={triple} alt="" />
             <div className={styles.title}>Triple cheese</div>
