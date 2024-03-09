@@ -29,7 +29,10 @@ function Header() {
       ></div>
       <div className={styles.nav}>
         <div className={styles.logo_container}>
-          <img src={logo} alt="logo" className={styles.logo} />
+          <Link to="/">
+            <img src={logo} alt="logo" className={styles.logo} />
+          </Link>
+
         </div>
         <div className={styles.menu + " " + (showMenu ? styles.active : "")}>
           <ul>
@@ -40,19 +43,20 @@ function Header() {
             </li>
             <li>
               <Link to="menu" smooth={true} duration={800}>
-              Menu
+                Menu
               </Link>
             </li>
             <li>
               <Link to="sales" smooth={true} duration={800}>
+                Les meilleures ventes
+              </Link>
+            </li>
+            <li>
+              <Link to="wrp" smooth={true} duration={800}>
                 Services
               </Link>
             </li>
-            <li>
-              <Link to="sales" smooth={true} duration={800}>
-              Les meilleures ventes
-              </Link>
-            </li>
+
             <li>
               <Link to="footer" smooth={true} duration={800}>
                 Contact

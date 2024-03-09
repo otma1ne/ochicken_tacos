@@ -16,28 +16,28 @@ function Sales() {
               <img src={pizza} alt="" />
             </div>
             <div className={styles.title}>4 Fromages</div>
-            <div className={styles.ingre}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque.</div>
-            <div className={styles.prix}>12£</div>
+            <div className={styles.ingre}>(Chèvre, Reblochon, Bleu, Mozzarella )</div>
+            <div className={styles.prix}>12€</div>
           </div>
 
-          
+
           <div className={styles.card}>
             <img src={triple} alt="" />
             <div className={styles.title}>Triple cheese</div>
-            <div className={styles.ingre}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque.</div>
-            <div className={styles.prix}>12£</div>
+            <div className={styles.ingre}>3 Steak 45gr , 3 cheddar sauce ,crudités</div>
+            <div className={styles.prix}>7.5€</div>
           </div>
           <div className={styles.card}>
             <img src={mixte} alt="" />
             <div className={styles.title}>Mixte</div>
-            <div className={styles.ingre}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque.</div>
-            <div className={styles.prix}>12£</div>
+            <div className={styles.ingre}>Assiette avec 2 viandes au choix </div>
+            <div className={styles.prix}>11€</div>
           </div>
           <div className={styles.card}>
             <img src={pizza} alt="" />
             <div className={styles.title}>Pepporoni</div>
-            <div className={styles.ingre}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque.</div>
-            <div className={styles.prix}>12£</div>
+            <div className={styles.ingre}>fromage mozzarella râpé repperoni tranché</div>
+            <div className={styles.prix}>12€</div>
           </div>
         </div>
       </div>
