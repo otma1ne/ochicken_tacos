@@ -18,6 +18,7 @@ export default function MyTabs() {
 
     const desertsSubCategories = ['Gateaux', 'Häagen Dazs'];
     const offresSubCategories = ['Bucket', 'Menu tenders', 'Menu enfant', 'Menu family'];
+    const sauceboiSubCategories = ['Sauces', 'Boissons'];
 
     return (
         <div className='max-width' id='menu'>
@@ -33,6 +34,8 @@ export default function MyTabs() {
                     <div className={`${styles.filter_item} ${activeCategory === 'paninis' ? styles.active : ''}`} onClick={() => { setActiveCategory('paninis'); }}>Paninis</div>
                     <div className={`${styles.filter_item} ${activeCategory === 'poli' ? styles.active : ''}`} onClick={() => { setActiveCategory('poli'); }}>Poulet rôti</div>
                     <div className={`${styles.filter_item} ${activeCategory === 'offres' ? styles.active : ''}`} onClick={() => { setActiveCategory('offres'); setActiveSubCategory(''); }}>Offres groupées</div>
+                    <div className={`${styles.filter_item} ${activeCategory === 'sauceboi' ? styles.active : ''}`} onClick={() => { setActiveCategory('sauceboi'); setActiveSubCategory(''); }}>Sauces & Boissons</div>
+
                 </div>
             </div>
 
@@ -70,6 +73,22 @@ export default function MyTabs() {
                     </div>
                 </div>
             )}
+             {activeCategory === 'sauceboi' && (
+                <div className={styles.tabsContainer} style={{ color: "white" }}>
+                    <div className={styles.filter_items}>
+                        {sauceboiSubCategories.map((subCategory) => (
+                            <div key={subCategory} className={`${styles.filter_item} ${activeSubCategory === subCategory ? styles.active : ''}`} onClick={() => { setActiveSubCategory(subCategory); }}>
+                                {subCategory}
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            )}
+            <div className={styles.menuInformation}>
+                {activeCategory === 'sandwich' || activeCategory === 'burger' ? (
+                    <div>Tous nos menus sont fournis avec des frites.</div>
+                ) : null}
+            </div>
 
             <div className={styles.cards__container}>
                 {filteredData.map((item, index) => (

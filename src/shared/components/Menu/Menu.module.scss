@@ -1,6 +1,6 @@
 @import "../../../styles/variables";
 .filter_item.active {
-    color: red;
+    color: $hover-color;
 }
 
 
@@ -97,6 +97,13 @@
     .cards__container {
         grid-template-columns: repeat(2, 1fr); 
     }
+}
+.menuInformation {
+    margin-bottom: 20px;
+    color: $hover-color;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
