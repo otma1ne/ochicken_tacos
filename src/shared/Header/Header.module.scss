@@ -110,9 +110,19 @@
         align-items: flex-start;
         gap: 30px;
       }
+      
+      ul li {
+        color: white;
+        transition: color 0.3s ease;
 
+         &:hover {
+           cursor: pointer;
+           color: orange !important; 
+        }
+      }
       &.active {
         right: 0;
+        
       }
     }
   }

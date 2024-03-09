@@ -16,6 +16,9 @@ function Header() {
     setShowMenu(false);
   };
 
+  const handleMenuClick = () => {
+    setShowMenu(!showMenu);
+  };
   return (
     <header className={styles.header}>
       <div
@@ -36,22 +39,22 @@ function Header() {
               </Link>
             </li>
             <li>
-              <Link to="sales" smooth={true} duration={800}>
-                About
-              </Link>
-            </li>
-            <li>
-              <Link to="featured" smooth={true} duration={800}>
-                Featured
-              </Link>
-            </li>
-            <li>
               <Link to="menu" smooth={true} duration={800}>
-                Blog
+              Menu
               </Link>
             </li>
             <li>
-              <Link to="contact" smooth={true} duration={800}>
+              <Link to="sales" smooth={true} duration={800}>
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link to="sales" smooth={true} duration={800}>
+              Les meilleures ventes
+              </Link>
+            </li>
+            <li>
+              <Link to="footer" smooth={true} duration={800}>
                 Contact
               </Link>
             </li>
@@ -70,9 +73,7 @@ function Header() {
         </div>
         <div
           className={styles.menu_icon}
-          onClick={() => {
-            setShowMenu(true);
-          }}
+          onClick={handleMenuClick}
         >
           <img src={menuIcon} alt="menu" />
         </div>
