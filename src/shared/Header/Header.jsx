@@ -16,6 +16,10 @@ function Header() {
     setShowMenu(false);
   }; */
 
+  const menuItemClick = () => {
+    setShowMenu(false);
+  };
+
   const handleMenuClick = () => {
     setShowMenu(!showMenu);
   };
@@ -36,28 +40,53 @@ function Header() {
         <div className={styles.menu + " " + (showMenu ? styles.active : "")}>
           <ul>
             <li>
-              <Link to="home" smooth={true} duration={800}>
+              <Link
+                to="home"
+                smooth={true}
+                duration={800}
+                onClick={menuItemClick}
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link to="menu" smooth={true} duration={800}>
+              <Link
+                to="menu"
+                smooth={true}
+                duration={800}
+                onClick={menuItemClick}
+              >
                 Menu
               </Link>
             </li>
             <li>
-              <Link to="sales" smooth={true} duration={800}>
+              <Link
+                to="sales"
+                smooth={true}
+                duration={800}
+                onClick={menuItemClick}
+              >
                 Les meilleures ventes
               </Link>
             </li>
             <li>
-              <Link to="wrp" smooth={true} duration={800}>
+              <Link
+                to="wrp"
+                smooth={true}
+                duration={800}
+                onClick={menuItemClick}
+              >
                 Services
               </Link>
             </li>
 
             <li>
-              <Link to="footer" smooth={true} duration={800}>
+              <Link
+                to="footer"
+                smooth={true}
+                duration={800}
+                onClick={menuItemClick}
+              >
                 Contacts
               </Link>
             </li>
