@@ -26,11 +26,11 @@ function HomePage() {
             />
             <div className={styles.overlay}>
               <div className={styles.contentWrapper}>
-                <h1 className={styles.title}>Pizza Margarita</h1>
-                <div className={styles.seconde_title}>1 pizza achetée </div>
+                <h1 className={styles.title}>Pizza Margherita</h1>
                 <div className={styles.ligne}></div>
-                <div className={styles.three_title}>
-                  2ème à 5€ A emporter !!
+
+                <div className={styles.seconde_title}>
+                  1 pizza achetée <span> 2ème à 5€ A emporter !!</span>{" "}
                 </div>
               </div>
               <div className={styles.images}>
