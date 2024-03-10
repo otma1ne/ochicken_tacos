@@ -58,7 +58,7 @@ function Header() {
 
             <li>
               <Link to="footer" smooth={true} duration={800}>
-                Contact
+                Contacts
               </Link>
             </li>
           </ul>
