@@ -360,7 +360,7 @@ const data = [
     {
         "id": 39,
         "name": "Rif burger",
-        "imageUrl": require("../images/burgers/rifburger.png"),
+        "imageUrl": require("../images/burgers/riff.png"),
         "ingredient" : "Galette de PDT , galette de chicken, cheddar, sauce  crudités",    
         "price": "8€",
         "category": "burger"
